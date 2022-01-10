@@ -25,7 +25,7 @@ public class JpaCustomerDao implements CustomerDao {
 
 	@Override
 	public List<Customer> getAll() {
-		System.out.println("hello");
+		System.out.println("JPACustomerDao >> getAll ...........");
 		return entityManager.createNativeQuery("SELECT * FROM customer", Customer.class).getResultList();
 	}
 
