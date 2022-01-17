@@ -6,6 +6,7 @@ import com.java89.springbootwebappcrud.entity.Customer;
 import com.java89.springbootwebappcrud.sorting.SortOrder;
 import com.java89.springbootwebappcrud.sorting.SortUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +18,7 @@ public class CustomerServiceImpl implements CustomerService {
 	private CustomerDao customerDao;
 
 	@Autowired
-	public CustomerServiceImpl(CustomerDao customerDao, CustomerRepository customerRepository) {
+	public CustomerServiceImpl(CustomerDao customerDao) {
 		this.customerDao = customerDao;
 	}
 

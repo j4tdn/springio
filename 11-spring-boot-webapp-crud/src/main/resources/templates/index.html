@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Spring Boot Demo</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
 </head>
 <body>
 <h3>Spring Boot CRM - REST APIs</h3>
 
 <hr>
 
-<a th:href="@{/api/customers}">GET ALL CUSTOMERS</a>
+<a th:href="@{/api/customers}" class="red">GET ALL CUSTOMERS</a>
 
 </body>
 </html>

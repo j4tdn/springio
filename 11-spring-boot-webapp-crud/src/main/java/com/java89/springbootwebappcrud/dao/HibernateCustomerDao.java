@@ -11,7 +11,7 @@ import javax.persistence.EntityManager;
 import java.util.List;
 
 
-@Repository
+@Repository("abc")
 public class HibernateCustomerDao implements CustomerDao {
 
 	private EntityManager entityManager;
